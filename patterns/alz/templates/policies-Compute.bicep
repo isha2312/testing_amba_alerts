@@ -71,7 +71,6 @@ var loadPolicyDefinitions = {
     loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-DataDiskReadLatency-Alert.json')
     loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-DataDiskSpace-Alert.json')
     loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-DataDiskWriteLatency-Alert.json')
-    loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-HeartBeat-Alert.json')
     loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-NetworkIn-Alert.json')
     loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-NetworkOut-Alert.json')
     loadTextContent('../../../services/Compute/virtualMachines/Deploy-VM-OSDiskReadLatency-Alert.json')

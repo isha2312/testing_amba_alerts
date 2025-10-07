@@ -206,54 +206,6 @@
               "displayName": "Customer defined User Assigned managed Identity resource Id."
             }
           },
-          "HybridVMHeartBeatRGAlertSeverity": {
-            "type": "String",
-            "defaultValue": "1",
-            "allowedValues": [
-              "0",
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
-            "metadata": {
-              "displayName": "Hybrid VM Heart Beat RG Alert Severity",
-              "description": "Severity of the alert for VM Heart Beat RG"
-            }
-          },
-          "HybridVMHeartBeatRGWindowSize": {
-            "type": "string",
-            "defaultValue": "PT15M",
-            "allowedValues": [
-              "PT1M",
-              "PT5M",
-              "PT15M",
-              "PT30M",
-              "PT1H",
-              "PT6H",
-              "PT12H",
-              "P1D"
-            ],
-            "metadata": {
-              "displayName": "Hybrid VM Heart Beat RG Window Size",
-              "description": "Window size for the alert"
-            }
-          },
-          "HybridVMHeartBeatRGEvaluationFrequency": {
-            "type": "string",
-            "defaultValue": "PT5M",
-            "allowedValues": [
-              "PT1M",
-              "PT5M",
-              "PT15M",
-              "PT30M",
-              "PT1H"
-            ],
-            "metadata": {
-              "displayName": "Hybrid VM Heart Beat RG Evaluation Frequency",
-              "description": "Evaluation frequency for the alert"
-            }
-          },
           "HybridVMNetworkInAlertSeverity": {
             "type": "String",
             "defaultValue": "2",
