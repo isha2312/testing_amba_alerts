@@ -1434,45 +1434,6 @@
     },
     "policyAssignmentParametersHybridVM": {
       "value": {
-        "HybridVMHeartBeatRGAlertSeverity": {
-          "value": "1"
-        },
-        "HybridVMHeartBeatRGWindowSize": {
-          "value": "PT6H"
-        },
-        "HybridVMHeartBeatRGEvaluationFrequency": {
-          "value": "PT5M"
-        },
-        "HybridVMHeartBeatRGAutoMitigate": {
-          "value": "true"
-        },
-        "HybridVMHeartBeatRGcheckWorkspaceAlertsStorageConfigured": {
-          "value": "false"
-        },
-        "HybridVMHeartBeatRGAutoResolve": {
-          "value": "true"
-        },
-        "HybridVMHeartBeatRGAutoResolveTime": {
-          "value": "00:10:00"
-        },
-        "HybridVMHeartBeatRGPolicyEffect": {
-          "value": "deployIfNotExists"
-        },
-        "HybridVMHeartBeatRGAlertState": {
-          "value": "true"
-        },
-        "HybridVMHeartBeatRGThreshold": {
-          "value": "10"
-        },
-        "HybridVMHeartBeatRGOperator": {
-          "value": "GreaterThan"
-        },
-        "HybridVMHeartBeatRGTimeAggregation": {
-          "value": "Count"
-        },
-        "HybridVMHeartBeatRGFailingPeriods": {
-          "value": "1"
-        },
         "HybridVMNetworkInAlertSeverity": {
           "value": "2"
         },
@@ -2650,45 +2611,7 @@
     },
     "policyAssignmentParametersVM": {
       "value": {
-        "VMHeartBeatRGAlertSeverity": {
-          "value": "1"
-        },
-        "VMHeartBeatRGWindowSize": {
-          "value": "PT6H"
-        },
-        "VMHeartBeatRGEvaluationFrequency": {
-          "value": "PT5M"
-        },
-        "VMHeartBeatRGAutoMitigate": {
-          "value": "true"
-        },
-        "VMHeartBeatRGcheckWorkspaceAlertsStorageConfigured": {
-          "value": "false"
-        },
-        "VMHeartBeatRGAutoResolve": {
-          "value": "true"
-        },
-        "VMHeartBeatRGAutoResolveTime": {
-          "value": "00:10:00"
-        },
-        "VMHeartBeatRGPolicyEffect": {
-          "value": "deployIfNotExists"
-        },
-        "VMHeartBeatRGAlertState": {
-          "value": "true"
-        },
-        "VMHeartBeatRGThreshold": {
-          "value": "10"
-        },
-        "VMHeartBeatRGOperator": {
-          "value": "GreaterThan"
-        },
-        "VMHeartBeatRGTimeAggregation": {
-          "value": "Count"
-        },
-        "VMHeartBeatRGFailingPeriods": {
-          "value": "1"
-        },
+        
         "VMNetworkInAlertSeverity": {
           "value": "2"
         },
