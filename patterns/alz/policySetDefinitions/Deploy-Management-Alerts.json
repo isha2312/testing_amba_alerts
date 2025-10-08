@@ -176,7 +176,7 @@
       },
       "RVASRHealthMonitorPolicyEffect": {
         "type": "string",
-        "defaultValue": "modify",
+        "defaultValue": "disabled",
         "allowedValues": [
           "modify",
           "audit",
