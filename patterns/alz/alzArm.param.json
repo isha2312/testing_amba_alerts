@@ -1426,7 +1426,7 @@
           "value": "true"
         },
         "activityHSMsDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         }
       }
     },
@@ -2140,7 +2140,7 @@
           "value": "true"
         },
         "activityHSMsDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         }
       }
     },
