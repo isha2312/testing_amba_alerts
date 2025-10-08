@@ -107,7 +107,7 @@
           "deployIfNotExists",
           "disabled"
         ],
-        "defaultValue": "deployIfNotExists"
+        "defaultValue": "disabled"
       },
       "MonitorDisableTagName": {
         "type": "String",

@@ -397,7 +397,7 @@
       },
       "StorageAccountAvailabilityPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
