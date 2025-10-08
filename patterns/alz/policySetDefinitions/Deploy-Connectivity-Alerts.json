@@ -1536,7 +1536,7 @@
       },
       "PIPDDoSAttackPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -1688,7 +1688,7 @@
       },
       "PIPVIPAvailabilityPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"

@@ -578,7 +578,7 @@
           "value": "PT5M"
         },
         "PIPDDoSAttackPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "PIPDDoSAttackAlertState": {
           "value": "true"
