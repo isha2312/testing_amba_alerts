@@ -2018,7 +2018,7 @@
           "value": "1"
         },
         "LAWDailyCapLimitPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "LAWDailyCapLimitAlertState": {
           "value": "true"
@@ -3234,7 +3234,7 @@
           "value": "true"
         },
         "activityLAWKeyRegenPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityLAWKeyRegenAlertState": {
           "value": "true"
@@ -3270,7 +3270,7 @@
           "value": "1"
         },
         "LAWDailyCapLimitPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "LAWDailyCapLimitAlertState": {
           "value": "true"

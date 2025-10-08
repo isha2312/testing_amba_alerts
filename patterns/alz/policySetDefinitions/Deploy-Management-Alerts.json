@@ -135,7 +135,7 @@
       },
       "AATotalJobAlertPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -163,7 +163,7 @@
       },
       "RVBackupHealthMonitorPolicyEffect": {
         "type": "string",
-        "defaultValue": "modify",
+        "defaultValue": "disabled",
         "allowedValues": [
           "modify",
           "audit",
@@ -265,7 +265,7 @@
       },
       "StorageAccountDeletePolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -305,7 +305,7 @@
       },
       "activityLAWKeyRegenPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -454,7 +454,7 @@
       },
       "LAWDailyCapLimitPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
