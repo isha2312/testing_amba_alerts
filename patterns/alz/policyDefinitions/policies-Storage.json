@@ -259,7 +259,7 @@
           },
           "StorageAccountDeletePolicyEffect": {
             "type": "string",
-            "defaultValue": "disabled",
+            "defaultValue": "deployIfNotExists",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
