@@ -85,7 +85,144 @@
           "displayName": "Customer defined User Assigned managed Identity resource Id."
         }
       },
-
+      "HybridVMHeartBeatRGAlertSeverity": {
+        "type": "String",
+        "defaultValue": "1",
+        "allowedValues": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Alert Severity",
+          "description": "Severity of the alert for VM Heart Beat RG"
+        }
+      },
+      "HybridVMHeartBeatRGWindowSize": {
+        "type": "string",
+        "defaultValue": "PT15M",
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H",
+          "PT6H",
+          "PT12H",
+          "P1D"
+        ],
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Window Size",
+          "description": "Window size for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGEvaluationFrequency": {
+        "type": "string",
+        "defaultValue": "PT5M",
+        "allowedValues": [
+          "PT1M",
+          "PT5M",
+          "PT15M",
+          "PT30M",
+          "PT1H"
+        ],
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Evaluation Frequency",
+          "description": "Evaluation frequency for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGAutoMitigate": {
+        "type": "string",
+        "defaultValue": "true",
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Auto Mitigate",
+          "description": "Auto Mitigate for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGcheckWorkspaceAlertsStorageConfigured": {
+        "type": "string",
+        "defaultValue": "false",
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Require a workspace linked storage",
+          "description": "Don't create the alert rule if the Log Analytics workspace doesn't have a configured linked storage account (relevant if you're using Customer Managed Keys)."
+        }
+      },
+      "HybridVMHeartBeatRGAutoResolve": {
+        "type": "string",
+        "defaultValue": "true",
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Auto Resolve",
+          "description": "Auto Resolve for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGAutoResolveTime": {
+        "type": "string",
+        "defaultValue": "00:10:00",
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Auto Resolve Time",
+          "description": "Auto Resolve Time for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGPolicyEffect": {
+        "type": "string",
+        "defaultValue": "deployIfNotExists",
+        "allowedValues": [
+          "deployIfNotExists",
+          "disabled"
+        ],
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Policy Effect",
+          "description": "Policy effect for the alert, deployIfNotExists will deploy the alert if it does not exist"
+        }
+      },
+      "HybridVMHeartBeatRGAlertState": {
+        "type": "string",
+        "defaultValue": "true",
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Alert State",
+          "description": "Alert state for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGThreshold": {
+        "type": "string",
+        "defaultValue": "10",
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Threshold",
+          "description": "Threshold for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGOperator": {
+        "type": "string",
+        "defaultValue": "GreaterThan",
+        "allowedValues": [
+          "GreaterThan"
+        ],
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Operator",
+          "description": "Operator for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGTimeAggregation": {
+        "type": "string",
+        "defaultValue": "Count",
+        "allowedValues": [
+          "Count"
+        ],
+        "metadata": {
+          "displayName": "Hybrid VM Heart Beat RG Time Aggregation",
+          "description": "Time Aggregation for the alert"
+        }
+      },
+      "HybridVMHeartBeatRGFailingPeriods": {
+        "type": "string",
+        "defaultValue": "1",
+        "metadata": {
+          "displayName": "HybridVM Heart Beat RG Failing Periods",
+          "description": "Failing Periods for the alert"
+        }
+      },
       "HybridVMNetworkInAlertSeverity": {
         "type": "String",
         "defaultValue": "2",
@@ -1676,6 +1813,69 @@
       }
     },
     "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "ALZ_HybridVMHeartBeatRG",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deploy_Hybrid_VM_HeartBeat_Alert",
+        "parameters": {
+          "UAMIResourceId": {
+            "value": "[[if(empty(parameters('BYOUserAssignedManagedIdentityResourceId')), concat('/subscriptions/', parameters('ALZManagementSubscriptionId'), '/resourceGroups/', parameters('ALZMonitorResourceGroupName'), '/providers/Microsoft.ManagedIdentity/userAssignedIdentities/', parameters('ALZUserAssignedManagedIdentityName')),parameters('BYOUserAssignedManagedIdentityResourceId'))]"
+          },
+          "alertResourceGroupName": {
+            "value": "[[parameters('ALZMonitorResourceGroupName')]"
+          },
+          "alertResourceGroupTags": {
+            "value": "[[parameters('ALZMonitorResourceGroupTags')]"
+          },
+          "alertResourceGroupLocation": {
+            "value": "[[parameters('ALZMonitorResourceGroupLocation')]"
+          },
+          "severity": {
+            "value": "[[parameters('HybridVMHeartBeatRGAlertSeverity')]"
+          },
+          "windowSize": {
+            "value": "[[parameters('HybridVMHeartBeatRGWindowSize')]"
+          },
+          "evaluationFrequency": {
+            "value": "[[parameters('HybridVMHeartBeatRGEvaluationFrequency')]"
+          },
+          "autoMitigate": {
+            "value": "[[parameters('HybridVMHeartBeatRGAutoMitigate')]"
+          },
+          "checkWorkspaceAlertsStorageConfigured": {
+            "value": "[[parameters('HybridVMHeartBeatRGcheckWorkspaceAlertsStorageConfigured')]"
+          },
+          "autoResolve": {
+            "value": "[[parameters('HybridVMHeartBeatRGAutoResolve')]"
+          },
+          "autoResolveTime": {
+            "value": "[[parameters('HybridVMHeartBeatRGAutoResolveTime')]"
+          },
+          "effect": {
+            "value": "[[parameters('HybridVMHeartBeatRGPolicyEffect')]"
+          },
+          "enabled": {
+            "value": "[[parameters('HybridVMHeartBeatRGAlertState')]"
+          },
+          "threshold": {
+            "value": "[[parameters('HybridVMHeartBeatRGThreshold')]"
+          },
+          "operator": {
+            "value": "[[parameters('HybridVMHeartBeatRGOperator')]"
+          },
+          "timeAggregation": {
+            "value": "[[parameters('HybridVMHeartBeatRGTimeAggregation')]"
+          },
+          "failingPeriods": {
+            "value": "[[parameters('HybridVMHeartBeatRGFailingPeriods')]"
+          },
+          "MonitorDisableTagName": {
+            "value": "[[parameters('ALZMonitorDisableTagName')]"
+          },
+          "MonitorDisableTagValues": {
+            "value": "[[parameters('ALZMonitorDisableTagValues')]"
+          }
+        }
+      },
       {
         "policyDefinitionReferenceId": "ALZ_HybridVMNetworkIn",
         "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/contoso/providers/Microsoft.Authorization/policyDefinitions/Deploy_Hybrid_VM_NetworkIn_Alert",
