@@ -45,7 +45,7 @@
     },
     "rbacContributor": "b24988ac-6180-42a0-ab88-20f7382dd24c",
     "roleAssignmentNames": {
-      "deployAMBANotificationAssets": "[newGuid()]"
+      "deployAMBANotificationAssets": "[guid(concat(parameters('topLevelManagementGroupPrefix'), variables('policyAssignmentNames').ambaNotificationAssets))]"
     }
   },
   "resources": [
