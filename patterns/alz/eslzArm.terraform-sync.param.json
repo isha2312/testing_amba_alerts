@@ -616,7 +616,7 @@
           "value": "PT1M"
         },
         "PIPVIPAvailabilityPolicyEffect": {
-          "value": "disabled"
+          "value": "deployIfNotExists"
         },
         "PIPVIPAvailabilityAlertState": {
           "value": "true"
@@ -706,7 +706,7 @@
           "value": "PT1M"
         },
         "VNETDDOSAttackPolicyEffect": {
-          "value": "disabled"
+          "value": "deployIfNotExists"
         },
         "VNETDDOSAttackAlertState": {
           "value": "true"

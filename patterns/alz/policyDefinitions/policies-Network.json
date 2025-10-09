@@ -1882,7 +1882,7 @@
           },
           "PIPVIPAvailabilityPolicyEffect": {
             "type": "string",
-            "defaultValue": "disabled",
+            "defaultValue": "deployIfNotExists",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2262,7 +2262,7 @@
           },
           "VNETDDOSAttackPolicyEffect": {
             "type": "string",
-            "defaultValue": "disabled",
+            "defaultValue": "deployIfNotExists",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
