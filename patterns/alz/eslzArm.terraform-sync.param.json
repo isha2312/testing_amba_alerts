@@ -880,7 +880,7 @@
           "value": "PT1M"
         },
         "FirewallHealthPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "FirewallHealthAlertState": {
           "value": "true"
@@ -889,37 +889,37 @@
           "value": "90"
         },
         "activityFWDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityFWDeleteAlertState": {
           "value": "true"
         },
         "activityNSGDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityNSGDeleteAlertState": {
           "value": "true"
         },
         "activityUDRUpdatePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityUDRUpdateAlertState": {
           "value": "true"
         },
         "activityUDRDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityUDRDeleteAlertState": {
           "value": "true"
         },
         "activityUDRRoutesDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityUDRRoutesDeleteAlertState": {
           "value": "true"
         },
         "activityVPNGWDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityVPNGWDeleteAlertState": {
           "value": "true"
@@ -994,7 +994,7 @@
           "value": "PT1M"
         },
         "ERPBitsInPerSecondPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPBitsInPerSecondAlertState": {
           "value": "true"
@@ -1009,7 +1009,7 @@
           "value": "PT1M"
         },
         "ERPBitsOutPerSecondPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPBitsOutPerSecondAlertState": {
           "value": "true"
@@ -1024,7 +1024,7 @@
           "value": "PT1M"
         },
         "ERPLineProtocolPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPLineProtocolAlertState": {
           "value": "true"
@@ -1039,7 +1039,7 @@
           "value": "PT1M"
         },
         "ERPRxLightLevelHighPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPRxLightLevelHighAlertState": {
           "value": "true"
@@ -1054,7 +1054,7 @@
           "value": "PT1M"
         },
         "ERPRxLightLevelLowPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPRxLightLevelLowAlertState": {
           "value": "true"
@@ -1069,7 +1069,7 @@
           "value": "PT1M"
         },
         "ERPTxLightLevelHighPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPTxLightLevelHighAlertState": {
           "value": "true"
@@ -1084,7 +1084,7 @@
           "value": "PT1M"
         },
         "ERPTxLightLevelLowPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "ERPTxLightLevelLowAlertState": {
           "value": "true"

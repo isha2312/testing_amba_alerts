@@ -887,7 +887,7 @@
           "value": "90"
         },
         "activityFWDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "activityFWDeleteAlertState": {
           "value": "true"
