@@ -280,7 +280,7 @@
       },
       "VPNGwBGPPeerStatusPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -660,7 +660,7 @@
       },
       "VPNGWBandWidthUtilPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -812,7 +812,7 @@
       },
       "VPNGWTunnelEgressPacketDropCountPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -896,7 +896,7 @@
       },
       "VPNGWTunnelEgressPacketDropMismatchPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -1064,7 +1064,7 @@
       },
       "VPNGWTunnelIngressPacketDropCountPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -1148,7 +1148,7 @@
       },
       "VPNGWTunnelIngressPacketDropMismatchPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -1536,7 +1536,7 @@
       },
       "PIPDDoSAttackPolicyEffect": {
         "type": "string",
-        "defaultValue": "disabled",
+        "defaultValue": "deployIfNotExists",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -2708,7 +2708,7 @@
       },
       "AFWSNATPortUtilizationPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"

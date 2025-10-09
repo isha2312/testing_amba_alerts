@@ -277,7 +277,7 @@
           "value": "PT5M"
         },
         "VPNGwBGPPeerStatusPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VPNGwBGPPeerStatusAlertState": {
           "value": "true"
@@ -367,7 +367,7 @@
           "value": "PT5M"
         },
         "VPNGWBandWidthUtilPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VPNGWBandWidthUtilAlertState": {
           "value": "true"
@@ -403,7 +403,7 @@
           "value": "PT5M"
         },
         "VPNGWTunnelEgressPacketDropCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VPNGWTunnelEgressPacketDropCountAlertState": {
           "value": "true"
@@ -424,7 +424,7 @@
           "value": "PT5M"
         },
         "VPNGWTunnelEgressPacketDropMismatchPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VPNGWTunnelEgressPacketDropMismatchAlertState": {
           "value": "true"
@@ -466,7 +466,7 @@
           "value": "PT5M"
         },
         "VPNGWTunnelIngressPacketDropCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VPNGWTunnelIngressPacketDropCountAlertState": {
           "value": "true"
@@ -487,7 +487,7 @@
           "value": "PT5M"
         },
         "VPNGWTunnelIngressPacketDropMismatchPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VPNGWTunnelIngressPacketDropMismatchAlertState": {
           "value": "true"
@@ -580,7 +580,7 @@
           "value": "PT5M"
         },
         "PIPDDoSAttackPolicyEffect": {
-          "value": "disabled"
+          "value": "deployIfNotExists"
         },
         "PIPDDoSAttackAlertState": {
           "value": "true"
@@ -862,7 +862,7 @@
           "value": "PT1M"
         },
         "AFWSNATPortUtilizationPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AFWSNATPortUtilizationAlertState": {
           "value": "true"
