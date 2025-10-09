@@ -3242,7 +3242,7 @@
           },
           "LBGlobalBackendAvailabilityPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3310,7 +3310,7 @@
           },
           "LBHealthProbeStatusPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"

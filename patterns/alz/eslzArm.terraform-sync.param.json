@@ -949,7 +949,7 @@
           "value": "PT1M"
         },
         "LBGlobalBackendAvailabilityPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "LBGlobalBackendAvailabilityAlertState": {
           "value": "true"
@@ -964,7 +964,7 @@
           "value": "PT1M"
         },
         "LBHealthProbeStatusPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "LBHealthProbeStatusAlertState": {
           "value": "true"
