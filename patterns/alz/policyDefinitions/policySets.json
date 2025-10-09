@@ -927,7 +927,7 @@
           },
           "VNETDDOSAttackPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2518,7 +2518,7 @@
           },
           "AGWApplicationGatewayTotalTimePolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2599,7 +2599,7 @@
           },
           "AGWBackendLastByteResponseTimePolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2667,7 +2667,7 @@
           },
           "AGWCapacityUnitsPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2735,7 +2735,7 @@
           },
           "AGWComputeUnitsPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2803,7 +2803,7 @@
           },
           "AGWCPUUtilPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2884,7 +2884,7 @@
           },
           "AGWFailedRequestsPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -2965,7 +2965,7 @@
           },
           "AGWResponseStatusPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3033,7 +3033,7 @@
           },
           "AGWUnhealthyHostCountPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3373,7 +3373,7 @@
           },
           "CDNPOriginHealthPercentagePolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3509,7 +3509,7 @@
           },
           "CDNPPercentage4XXPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3577,7 +3577,7 @@
           },
           "CDNPPercentage5XXPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3645,7 +3645,7 @@
           },
           "TMEndpointHealthPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -3985,7 +3985,7 @@
           },
           "FDBackendHealthPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -4053,7 +4053,7 @@
           },
           "FDBackendRequestLatencyPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -5613,7 +5613,7 @@
           },
           "AATotalJobAlertPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -5641,7 +5641,7 @@
           },
           "RVBackupHealthMonitorPolicyEffect": {
             "type": "string",
-            "defaultValue": "modify",
+            "defaultValue": "disabled",
             "allowedValues": [
               "modify",
               "audit",

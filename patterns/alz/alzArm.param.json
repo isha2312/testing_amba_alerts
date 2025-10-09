@@ -1935,7 +1935,7 @@
           "value": "PT1M"
         },
         "AATotalJobAlertPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AATotalJobAlertAlertState": {
           "value": "true"
@@ -1944,7 +1944,7 @@
           "value": "20"
         },
         "RVBackupHealthMonitorPolicyEffect": {
-          "value": "modify"
+          "value": "disabled"
         },
         "RVASRHealthMonitorPolicyEffect": {
           "value": "modify"
