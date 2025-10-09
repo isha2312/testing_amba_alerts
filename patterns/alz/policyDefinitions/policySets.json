@@ -610,7 +610,7 @@
           },
           "PIPDDoSAttackPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -762,7 +762,7 @@
           },
           "PIPVIPAvailabilityPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -1043,7 +1043,7 @@
           },
           "VMHeartBeatRGPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -5654,7 +5654,7 @@
           },
           "RVASRHealthMonitorPolicyEffect": {
             "type": "string",
-            "defaultValue": "modify",
+            "defaultValue": "disabled",
             "allowedValues": [
               "modify",
               "audit",
@@ -5783,7 +5783,7 @@
           },
           "activityLAWKeyRegenPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"
@@ -5932,7 +5932,7 @@
           },
           "LAWDailyCapLimitPolicyEffect": {
             "type": "string",
-            "defaultValue": "deployIfNotExists",
+            "defaultValue": "disabled",
             "allowedValues": [
               "deployIfNotExists",
               "disabled"

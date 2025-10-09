@@ -810,7 +810,7 @@
       },
       "VNETDDOSAttackPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -2401,7 +2401,7 @@
       },
       "AGWApplicationGatewayTotalTimePolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"

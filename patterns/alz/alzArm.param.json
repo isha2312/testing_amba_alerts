@@ -614,7 +614,7 @@
           "value": "PT1M"
         },
         "PIPVIPAvailabilityPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "PIPVIPAvailabilityAlertState": {
           "value": "true"
@@ -704,7 +704,7 @@
           "value": "PT1M"
         },
         "VNETDDOSAttackPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VNETDDOSAttackAlertState": {
           "value": "true"
@@ -2192,7 +2192,7 @@
           "value": "PT1M"
         },
         "PIPVIPAvailabilityPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "PIPVIPAvailabilityAlertState": {
           "value": "true"
@@ -2228,7 +2228,7 @@
           "value": "PT1M"
         },
         "VNETDDOSAttackPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VNETDDOSAttackAlertState": {
           "value": "true"
@@ -2249,7 +2249,7 @@
           "value": "PT1M"
         },
         "AGWApplicationGatewayTotalTimePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWApplicationGatewayTotalTimeAlertState": {
           "value": "true"
@@ -2273,7 +2273,7 @@
           "value": "PT1M"
         },
         "AGWBackendLastByteResponseTimePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWBackendLastByteResponseTimeAlertState": {
           "value": "true"
@@ -2294,7 +2294,7 @@
           "value": "PT1M"
         },
         "AGWCapacityUnitsPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWCapacityUnitsAlertState": {
           "value": "true"
@@ -2309,7 +2309,7 @@
           "value": "PT1M"
         },
         "AGWComputeUnitsPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWComputeUnitsAlertState": {
           "value": "true"
@@ -2324,7 +2324,7 @@
           "value": "PT1M"
         },
         "AGWCPUUtilPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWCPUUtilAlertState": {
           "value": "true"
@@ -2342,7 +2342,7 @@
           "value": "PT1M"
         },
         "AGWFailedRequestsPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWFailedRequestsAlertState": {
           "value": "true"
@@ -2366,7 +2366,7 @@
           "value": "PT1M"
         },
         "AGWResponseStatusPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWResponseStatusAlertState": {
           "value": "true"
@@ -2387,7 +2387,7 @@
           "value": "PT1M"
         },
         "AGWUnhealthyHostCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AGWUnhealthyHostCountAlertState": {
           "value": "true"
@@ -2465,7 +2465,7 @@
           "value": "PT1M"
         },
         "TMEndpointHealthPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "TMEndpointHealthAlertState": {
           "value": "true"
@@ -2480,7 +2480,7 @@
           "value": "PT1M"
         },
         "CDNPOriginHealthPercentagePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "CDNPOriginHealthPercentageAlertState": {
           "value": "true"
@@ -2516,7 +2516,7 @@
           "value": "PT1M"
         },
         "CDNPPercentage4XXPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "CDNPPercentage4XXAlertState": {
           "value": "true"
@@ -2537,7 +2537,7 @@
           "value": "PT1M"
         },
         "CDNPPercentage5XXPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "CDNPPercentage5XXAlertState": {
           "value": "true"
@@ -2558,7 +2558,7 @@
           "value": "PT1M"
         },
         "FDBackendHealthPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "FDBackendHealthAlertState": {
           "value": "true"
@@ -2573,7 +2573,7 @@
           "value": "PT1M"
         },
         "FDBackendRequestLatencyPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "FDBackendRequestLatencyAlertState": {
           "value": "true"
