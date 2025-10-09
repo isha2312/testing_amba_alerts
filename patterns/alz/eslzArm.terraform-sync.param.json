@@ -979,7 +979,7 @@
           "value": "PT1M"
         },
         "LBUsedSNATPortsPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "LBUsedSNATPortsAlertState": {
           "value": "true"
