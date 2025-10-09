@@ -1263,7 +1263,7 @@
           "value": "PT5M"
         },
         "P2SVPNGatewaysUserVpnRouteCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "P2SVPNGatewaysUserVpnRouteCountAlertState": {
           "value": "true"
@@ -1281,7 +1281,7 @@
           "value": "PT5M"
         },
         "P2SVPNGatewaysP2SConnectionCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "P2SVPNGatewaysP2SConnectionCountAlertState": {
           "value": "true"

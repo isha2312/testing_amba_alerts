@@ -160,7 +160,7 @@
       },
       "AFWNetworkRuleHitPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -236,7 +236,7 @@
       },
       "AFWApplicationRuleHitPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -310,7 +310,7 @@
       },
       "P2SVPNGatewaysP2SBandwidthPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -384,7 +384,7 @@
       },
       "P2SVPNGatewaysP2SConnectionCountPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -458,7 +458,7 @@
       },
       "P2SVPNGatewaysUserVpnRouteCountPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -532,7 +532,7 @@
       },
       "VirtualHubsBgpPeerStatusPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -606,7 +606,7 @@
       },
       "VirtualHubsCountOfRoutesAdvertisedToPeerPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -680,7 +680,7 @@
       },
       "VirtualHubsCountOfRoutesLearnedFromPeerPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -754,7 +754,7 @@
       },
       "VirtualHubsRoutingInfrastructureUnitsPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -828,7 +828,7 @@
       },
       "VirtualHubsSpokeVMUtilizationPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"
@@ -902,7 +902,7 @@
       },
       "VirtualHubsVirtualHubDataProcessedPolicyEffect": {
         "type": "string",
-        "defaultValue": "deployIfNotExists",
+        "defaultValue": "disabled",
         "allowedValues": [
           "deployIfNotExists",
           "disabled"

@@ -1103,7 +1103,7 @@
           "value": "PT5M"
         },
         "AFWNetworkRuleHitPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AFWNetworkRuleHitAlertState": {
           "value": "true"
@@ -1121,7 +1121,7 @@
           "value": "PT5M"
         },
         "AFWApplicationRuleHitPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "AFWApplicationRuleHitAlertState": {
           "value": "true"
@@ -1139,7 +1139,7 @@
           "value": "PT5M"
         },
         "VirtualHubsBgpPeerStatusPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VirtualHubsBgpPeerStatusAlertState": {
           "value": "true"
@@ -1157,7 +1157,7 @@
           "value": "PT5M"
         },
         "VirtualHubsCountOfRoutesAdvertisedToPeerPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VirtualHubsCountOfRoutesAdvertisedToPeerAlertState": {
           "value": "true"
@@ -1175,7 +1175,7 @@
           "value": "PT5M"
         },
         "VirtualHubsCountOfRoutesLearnedFromPeerPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VirtualHubsCountOfRoutesLearnedFromPeerAlertState": {
           "value": "true"
@@ -1193,7 +1193,7 @@
           "value": "PT5M"
         },
         "VirtualHubsRoutingInfrastructureUnitsPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VirtualHubsRoutingInfrastructureUnitsAlertState": {
           "value": "true"
@@ -1211,7 +1211,7 @@
           "value": "PT5M"
         },
         "VirtualHubsSpokeVMUtilizationPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VirtualHubsSpokeVMUtilizationAlertState": {
           "value": "true"
@@ -1229,7 +1229,7 @@
           "value": "PT5M"
         },
         "VirtualHubsVirtualHubDataProcessedPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "VirtualHubsVirtualHubDataProcessedAlertState": {
           "value": "true"
@@ -1265,7 +1265,7 @@
           "value": "PT5M"
         },
         "P2SVPNGatewaysUserVpnRouteCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "P2SVPNGatewaysUserVpnRouteCountAlertState": {
           "value": "true"
@@ -1283,7 +1283,7 @@
           "value": "PT5M"
         },
         "P2SVPNGatewaysP2SConnectionCountPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "P2SVPNGatewaysP2SConnectionCountAlertState": {
           "value": "true"
@@ -1301,7 +1301,7 @@
           "value": "PT5M"
         },
         "P2SVPNGatewaysP2SBandwidthPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "P2SVPNGatewaysP2SBandwidthAlertState": {
           "value": "true"
