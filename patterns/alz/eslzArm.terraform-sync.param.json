@@ -1970,7 +1970,7 @@
           "value": "90"
         },
         "StorageAccountDeletePolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "StorageAccountDeleteAlertState": {
           "value": "true"
