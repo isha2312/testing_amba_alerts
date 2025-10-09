@@ -934,7 +934,7 @@
           "value": "PT1M"
         },
         "LBDatapathAvailabilityPolicyEffect": {
-          "value": "deployIfNotExists"
+          "value": "disabled"
         },
         "LBDatapathAvailabilityAlertState": {
           "value": "true"
