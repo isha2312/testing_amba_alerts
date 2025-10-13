@@ -944,6 +944,26 @@
         }
       }
     },
+     {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "[variables('deploymentNames').policyDefinitionsNetworkDeploymentName]",
+      "location": "[deployment().location]",
+      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RcnManagementGroup'))]",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "contentVersion": "1.0.0.0",
+          "uri": "[variables('deploymentUris').policyDefinitionsNetwork]"
+        },
+        "parameters": {
+          "topLevelManagementGroupPrefix": {
+            "value": "[parameters('RcnManagementGroup')]"
+          }
+        }
+      }
+    },
     // Notification-Assets Policy Definitions
     {
       "type": "Microsoft.Resources/deployments",
