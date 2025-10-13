@@ -51,7 +51,7 @@
         "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
       }
     },
-    "RcnManagementGroup":{
+    "RcnManagementGroup": {
       "type": "string",
       "metadata": {
         "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
