@@ -1252,6 +1252,35 @@
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2020-10-01",
       "name": "[variables('deploymentNames').AMBANotificationAssetsDeploymentName]",
+      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('platformManagementGroup'))]",
+      "dependsOn": [
+        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+      ],
+      "location": "[deployment().location]",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "contentVersion": "1.0.0.0",
+          "uri": "[variables('deploymentUris').AMBANotificationAssetsInitiative]"
+        },
+        "parameters": {
+          "topLevelManagementGroupPrefix": {
+            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+          },
+          "policyAssignmentParameters": {
+            "value": "[variables('policyAssignmentParametersNotificationAssets')]"
+          },
+          "policyAssignmentExclusions": {
+            "value": "[parameters('policyAssignmentExclusionList').notificationAssetsAssignmentExcludedResources.value]"
+          }
+        }
+      }
+    },
+    {
+      "condition": "[equals(parameters('enableAMBANotificationAssets'), 'Yes')]",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "[variables('deploymentNames').AMBANotificationAssetsDeploymentName]",
       "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RcnManagementGroup'))]",
       "dependsOn": [
         "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
