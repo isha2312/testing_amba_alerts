@@ -671,6 +671,20 @@
                 "required": true
               },
               "visible": "[equals(steps('Configuration').enableAMBANetworkChanges, 'Yes')]"
+            },
+            {
+              "name": "RCNNonConnectedManagementGroup",
+              "type": "Microsoft.Common.DropDown",
+              "label": "Landing Zone Management Group",
+              "multiselect": false,
+              "defaultValue": "[if(empty(filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions')))), steps('basics').resourceScope.managementGroup.name, '')]",
+              "filter": true,
+              "toolTip": "Provide the name of the Management Group that will be used to host the landing zone resources.",
+              "constraints": {
+                "allowedValues": "[if(empty(filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions')))), filter(map(steps('Configuration').ManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => contains(item.label, steps('basics').resourceScope.managementGroup.displayName)), filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions'))))]",
+                "required": true
+              },
+              "visible": "[equals(steps('Configuration').enableAMBANetworkChanges, 'Yes')]"
             }
 
           ]
@@ -1014,6 +1028,7 @@
         "connectivityManagementGroup": "[if(equals(steps('Configuration').enableAMBAConnectivity, 'No'), 'contoso-connectivity', steps('Configuration').connectivityManagementGroup)]",
         "LandingZoneManagementGroup": "[if(empty(steps('Configuration').LandingZoneManagementGroup), 'contoso-landingzones', steps('Configuration').LandingZoneManagementGroup)]",
         "RcnManagementGroup": "[if(empty(steps('Configuration').RcnManagementGroup), 'contoso-landingzones', steps('Configuration').RcnManagementGroup)]",
+        "RCNNonConnectedManagementGroup": "[if(empty(steps('Configuration').RCNNonConnectedManagementGroup), 'contoso-landingzones', steps('Configuration').RCNNonConnectedManagementGroup)]",
         "BYOActionGroup": "[steps('Notification').BYOActionGroup]",
         "BYOAlertProcessingRule": "[steps('Notification').BYOAlertProcessingRule.id]",
         "deployAMBAPortalAccelerator": "Yes",
