@@ -3,7 +3,7 @@
   "apiVersion": "2021-06-01",
   "name": "Alerting-LoadBalancing",
   "properties": {
-    "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Load Balancing",
+    "displayName": "glo-polmon-poi-ambalb",
     "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Load Balancing Services such as Load Balancer, Application Gateway, Traffic Manager, and Azure Front Door.",
     "metadata": {
       "version": "1.2.0",

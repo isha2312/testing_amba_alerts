@@ -36,7 +36,7 @@
     "policyAssignmentNames": {
       "ambaLoadBalancing": "Deploy-AMBA-LoadBalance",
       "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Load Balancing Services such as Load Balancer, Application Gateway, Traffic Manager, and Azure Front Door.",
-      "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Load Balancing"
+      "displayName": "glo-polmon-poa-ambalb"
     },
     "nonComplianceMessage": {
       "message": "Alerting {enforcementMode} be deployed to Azure services.",

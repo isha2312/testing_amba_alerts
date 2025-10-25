@@ -128,7 +128,7 @@
       "apiVersion": "2021-06-01",
       "name": "Alerting-KeyManagement",
       "properties": {
-        "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Key Management",
+        "displayName": "glo-polmon-poi-ambakeymgmt",
         "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Key Management Services such as Azure Key Vault, and Managed HSM.",
         "metadata": {
           "version": "1.0.2",
@@ -918,7 +918,7 @@
       "apiVersion": "2021-06-01",
       "name": "Alerting-Identity",
       "properties": {
-        "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Identity",
+        "displayName": "glo-polmon-poi-ambaidentity",
         "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor identity components.",
         "metadata": {
           "version": "1.1.2",

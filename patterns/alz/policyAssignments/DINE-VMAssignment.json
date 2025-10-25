@@ -62,7 +62,7 @@
     "policyAssignmentNames": {
       "ambaVM": "Deploy-AMBA-VM",
       "description": "This initiative deploys Azure Monitor Baseline Alerts (AMBA-ALZ) to monitor Azure Virtual Machines.",
-      "displayName": "Deploy Azure Monitor Baseline Alerts (AMBA-ALZ) for Azure Virtual Machines"
+      "displayName": "glo-polmon-poa-ambavm"
     },
     "nonComplianceMessage": {
       "message": "Alerting {enforcementMode} be deployed to Azure services.",
