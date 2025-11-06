@@ -20,12 +20,6 @@
     "LandingZoneManagementGroup": {
       "value": "contoso-landingzones"
     },
-    "RcnManagementGroup": {
-      "value": "RCNConnected"
-    },
-    "RCNNonConnectedManagementGroup": {
-      "value": "RCNNonConnected"
-    },
     "enableAMBAConnectivity": {
       "value": "Yes"
     },
