@@ -51,18 +51,18 @@
         "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
       }
     },
-    "RcnManagementGroup": {
-      "type": "string",
-      "metadata": {
-        "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
-      }
-    },
-    "RCNNonConnectedManagementGroup": {
-      "type": "string",
-      "metadata": {
-        "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
-      }
-    },
+    // "RcnManagementGroup": {
+    //   "type": "string",
+    //   "metadata": {
+    //     "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
+    //   }
+    // },
+    // "RCNNonConnectedManagementGroup": {
+    //   "type": "string",
+    //   "metadata": {
+    //     "description": "Provide the name of the Management Group that will be used to host the landing zone resources."
+    //   }
+    // },
     "enableAMBAConnectivity": {
       "type": "string",
       "defaultValue": "Yes",
@@ -1276,64 +1276,64 @@
         }
       }
     },
-    {
-      "condition": "[equals(parameters('enableAMBANotificationAssets'), 'Yes')]",
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
-      "name": "[variables('deploymentNames').AMBANotificationAssetsDeploymentName]",
-      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RcnManagementGroup'))]",
-      "dependsOn": [
-        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
-      ],
-      "location": "[deployment().location]",
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "contentVersion": "1.0.0.0",
-          "uri": "[variables('deploymentUris').AMBANotificationAssetsInitiative]"
-        },
-        "parameters": {
-          "topLevelManagementGroupPrefix": {
-            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
-          },
-          "policyAssignmentParameters": {
-            "value": "[variables('policyAssignmentParametersNotificationAssets')]"
-          },
-          "policyAssignmentExclusions": {
-            "value": "[parameters('policyAssignmentExclusionList').notificationAssetsAssignmentExcludedResources.value]"
-          }
-        }
-      }
-    },
-    {
-      "condition": "[equals(parameters('enableAMBANotificationAssets'), 'Yes')]",
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
-      "name": "[variables('deploymentNames').AMBANotificationAssetsDeploymentName]",
-      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RCNNonConnectedManagementGroup'))]",
-      "dependsOn": [
-        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
-      ],
-      "location": "[deployment().location]",
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "contentVersion": "1.0.0.0",
-          "uri": "[variables('deploymentUris').AMBANotificationAssetsInitiative]"
-        },
-        "parameters": {
-          "topLevelManagementGroupPrefix": {
-            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
-          },
-          "policyAssignmentParameters": {
-            "value": "[variables('policyAssignmentParametersNotificationAssets')]"
-          },
-          "policyAssignmentExclusions": {
-            "value": "[parameters('policyAssignmentExclusionList').notificationAssetsAssignmentExcludedResources.value]"
-          }
-        }
-      }
-    },
+    // {
+    //   "condition": "[equals(parameters('enableAMBANotificationAssets'), 'Yes')]",
+    //   "type": "Microsoft.Resources/deployments",
+    //   "apiVersion": "2020-10-01",
+    //   "name": "[variables('deploymentNames').AMBANotificationAssetsDeploymentName]",
+    //   "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RcnManagementGroup'))]",
+    //   "dependsOn": [
+    //     "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+    //   ],
+    //   "location": "[deployment().location]",
+    //   "properties": {
+    //     "mode": "Incremental",
+    //     "templateLink": {
+    //       "contentVersion": "1.0.0.0",
+    //       "uri": "[variables('deploymentUris').AMBANotificationAssetsInitiative]"
+    //     },
+    //     "parameters": {
+    //       "topLevelManagementGroupPrefix": {
+    //         "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+    //       },
+    //       "policyAssignmentParameters": {
+    //         "value": "[variables('policyAssignmentParametersNotificationAssets')]"
+    //       },
+    //       "policyAssignmentExclusions": {
+    //         "value": "[parameters('policyAssignmentExclusionList').notificationAssetsAssignmentExcludedResources.value]"
+    //       }
+    //     }
+    //   }
+    // },
+    // {
+    //   "condition": "[equals(parameters('enableAMBANotificationAssets'), 'Yes')]",
+    //   "type": "Microsoft.Resources/deployments",
+    //   "apiVersion": "2020-10-01",
+    //   "name": "[variables('deploymentNames').AMBANotificationAssetsDeploymentName]",
+    //   "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RCNNonConnectedManagementGroup'))]",
+    //   "dependsOn": [
+    //     "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+    //   ],
+    //   "location": "[deployment().location]",
+    //   "properties": {
+    //     "mode": "Incremental",
+    //     "templateLink": {
+    //       "contentVersion": "1.0.0.0",
+    //       "uri": "[variables('deploymentUris').AMBANotificationAssetsInitiative]"
+    //     },
+    //     "parameters": {
+    //       "topLevelManagementGroupPrefix": {
+    //         "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+    //       },
+    //       "policyAssignmentParameters": {
+    //         "value": "[variables('policyAssignmentParametersNotificationAssets')]"
+    //       },
+    //       "policyAssignmentExclusions": {
+    //         "value": "[parameters('policyAssignmentExclusionList').notificationAssetsAssignmentExcludedResources.value]"
+    //       }
+    //     }
+    //   }
+    // },
     // Assigning AMBA HybridVM PolicySet to the LandingZone management group if condition is true
     {
       "condition": "[equals(parameters('enableAMBAHybridVM'), 'Yes')]",
@@ -1504,64 +1504,64 @@
         }
       }
     },
-     {
-      "condition": "[equals(parameters('enableAMBANetworkChanges'), 'Yes')]",
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
-      "name": "[variables('deploymentNames').AMBANetworkChangesDeploymentName]",
-      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RcnManagementGroup'))]",
-      "dependsOn": [
-        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
-      ],
-      "location": "[deployment().location]",
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "contentVersion": "1.0.0.0",
-          "uri": "[variables('deploymentUris').AMBANetworkChangesInitiative]"
-        },
-        "parameters": {
-          "topLevelManagementGroupPrefix": {
-            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
-          },
-          "policyAssignmentParameters": {
-            "value": "[variables('policyAssignmentParametersNetworkChanges')]"
-          },
-          "policyAssignmentExclusions": {
-            "value": "[parameters('policyAssignmentExclusionList').networkChangesAssignmentExcludedResources.value]"
-          }
-        }
-      }
-    },
-    {
-      "condition": "[equals(parameters('enableAMBANetworkChanges'), 'Yes')]",
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
-      "name": "[variables('deploymentNames').AMBANetworkChangesDeploymentName]",
-      "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RCNNonConnectedManagementGroup'))]",
-      "dependsOn": [
-        "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
-      ],
-      "location": "[deployment().location]",
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "contentVersion": "1.0.0.0",
-          "uri": "[variables('deploymentUris').AMBANetworkChangesInitiative]"
-        },
-        "parameters": {
-          "topLevelManagementGroupPrefix": {
-            "value": "[parameters('enterpriseScaleCompanyPrefix')]"
-          },
-          "policyAssignmentParameters": {
-            "value": "[variables('policyAssignmentParametersNetworkChanges')]"
-          },
-          "policyAssignmentExclusions": {
-            "value": "[parameters('policyAssignmentExclusionList').networkChangesAssignmentExcludedResources.value]"
-          }
-        }
-      }
-    },
+    //  {
+    //   "condition": "[equals(parameters('enableAMBANetworkChanges'), 'Yes')]",
+    //   "type": "Microsoft.Resources/deployments",
+    //   "apiVersion": "2020-10-01",
+    //   "name": "[variables('deploymentNames').AMBANetworkChangesDeploymentName]",
+    //   "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RcnManagementGroup'))]",
+    //   "dependsOn": [
+    //     "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+    //   ],
+    //   "location": "[deployment().location]",
+    //   "properties": {
+    //     "mode": "Incremental",
+    //     "templateLink": {
+    //       "contentVersion": "1.0.0.0",
+    //       "uri": "[variables('deploymentUris').AMBANetworkChangesInitiative]"
+    //     },
+    //     "parameters": {
+    //       "topLevelManagementGroupPrefix": {
+    //         "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+    //       },
+    //       "policyAssignmentParameters": {
+    //         "value": "[variables('policyAssignmentParametersNetworkChanges')]"
+    //       },
+    //       "policyAssignmentExclusions": {
+    //         "value": "[parameters('policyAssignmentExclusionList').networkChangesAssignmentExcludedResources.value]"
+    //       }
+    //     }
+    //   }
+    // },
+    // {
+    //   "condition": "[equals(parameters('enableAMBANetworkChanges'), 'Yes')]",
+    //   "type": "Microsoft.Resources/deployments",
+    //   "apiVersion": "2020-10-01",
+    //   "name": "[variables('deploymentNames').AMBANetworkChangesDeploymentName]",
+    //   "scope": "[concat('Microsoft.Management/managementGroups/', parameters('RCNNonConnectedManagementGroup'))]",
+    //   "dependsOn": [
+    //     "[variables('deploymentNames').policySetDefinitionsDeploymentName]"
+    //   ],
+    //   "location": "[deployment().location]",
+    //   "properties": {
+    //     "mode": "Incremental",
+    //     "templateLink": {
+    //       "contentVersion": "1.0.0.0",
+    //       "uri": "[variables('deploymentUris').AMBANetworkChangesInitiative]"
+    //     },
+    //     "parameters": {
+    //       "topLevelManagementGroupPrefix": {
+    //         "value": "[parameters('enterpriseScaleCompanyPrefix')]"
+    //       },
+    //       "policyAssignmentParameters": {
+    //         "value": "[variables('policyAssignmentParametersNetworkChanges')]"
+    //       },
+    //       "policyAssignmentExclusions": {
+    //         "value": "[parameters('policyAssignmentExclusionList').networkChangesAssignmentExcludedResources.value]"
+    //       }
+    //     }
+    //   }
+    // },
     // Assigning AMBA Recovery Services PolicySet to the Landing Zone management group if condition is true
     {
       "condition": "[equals(parameters('enableAMBARecoveryServices'), 'Yes')]",
