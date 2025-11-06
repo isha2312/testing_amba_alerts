@@ -656,26 +656,12 @@
                 "allowedValues": "[if(empty(filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions')))), filter(map(steps('Configuration').ManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => contains(item.label, steps('basics').resourceScope.managementGroup.displayName)), filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions'))))]",
                 "required": true
               },
-              "visible": "[or(equals(steps('Configuration').enableAMBAHybridVM,'Yes'), equals(steps('Configuration').enableAMBAKeyManagement,'Yes'), equals(steps('Configuration').enableAMBALoadBalancing,'Yes'), equals(steps('Configuration').enableAMBANetworkChanges,'Yes'), equals(steps('Configuration').enableAMBARecoveryServices,'Yes'), equals(steps('Configuration').enableAMBAStorage,'Yes'), equals(steps('Configuration').enableAMBAVM,'Yes'), equals(steps('Configuration').enableAMBAWeb,'Yes'))]"
+              "visible": "[or(equals(steps('Configuration').enableAMBAHybridVM,'Yes'), equals(steps('Configuration').enableAMBAKeyManagement,'Yes'), equals(steps('Configuration').enableAMBALoadBalancing,'Yes'), equals(steps('Configuration').enableAMBARecoveryServices,'Yes'), equals(steps('Configuration').enableAMBAStorage,'Yes'), equals(steps('Configuration').enableAMBAVM,'Yes'), equals(steps('Configuration').enableAMBAWeb,'Yes'))]"
             },
             {
-              "name": "RcnManagementGroup",
+              "name": "NetwChangesManagementGroup",
               "type": "Microsoft.Common.DropDown",
-              "label": "Landing Zone Management Group",
-              "multiselect": false,
-              "defaultValue": "[if(empty(filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions')))), steps('basics').resourceScope.managementGroup.name, '')]",
-              "filter": true,
-              "toolTip": "Provide the name of the Management Group that will be used to host the landing zone resources.",
-              "constraints": {
-                "allowedValues": "[if(empty(filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions')))), filter(map(steps('Configuration').ManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => contains(item.label, steps('basics').resourceScope.managementGroup.displayName)), filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions'))))]",
-                "required": true
-              },
-              "visible": "[equals(steps('Configuration').enableAMBANetworkChanges, 'Yes')]"
-            },
-            {
-              "name": "RCNNonConnectedManagementGroup",
-              "type": "Microsoft.Common.DropDown",
-              "label": "Landing Zone Management Group",
+              "label": "Network Changes Initiative Management Group",
               "multiselect": false,
               "defaultValue": "[if(empty(filter(map(steps('Configuration').DescendantManagementGroupAPI.value, (item) => parse(concat('{\"label\":\"', item.properties.displayName, '\",\"description\":\"', item.type, '\",\"value\":\"', item.name, '\"}'))), (item) => not(contains(item.description, '/subscriptions')))), steps('basics').resourceScope.managementGroup.name, '')]",
               "filter": true,
@@ -1027,8 +1013,7 @@
         "managementManagementGroup": "[if(and(equals(steps('Configuration').enableAMBAManagement,'No'), equals(steps('Configuration').enableAMBAHybridVM,'No'), equals(steps('Configuration').enableAMBAVM,'No'), equals(steps('Configuration').enableAMBAWeb,'No')), 'contoso-management', steps('Configuration').managementManagementGroup)]",
         "connectivityManagementGroup": "[if(equals(steps('Configuration').enableAMBAConnectivity, 'No'), 'contoso-connectivity', steps('Configuration').connectivityManagementGroup)]",
         "LandingZoneManagementGroup": "[if(empty(steps('Configuration').LandingZoneManagementGroup), 'contoso-landingzones', steps('Configuration').LandingZoneManagementGroup)]",
-        "RcnManagementGroup": "[if(empty(steps('Configuration').RcnManagementGroup), 'contoso-landingzones', steps('Configuration').RcnManagementGroup)]",
-        "RCNNonConnectedManagementGroup": "[if(empty(steps('Configuration').RCNNonConnectedManagementGroup), 'contoso-landingzones', steps('Configuration').RCNNonConnectedManagementGroup)]",
+        "NetwChangesManagementGroup": "[if(empty(steps('Configuration').NetwChangesManagementGroup), 'contoso-landingzones', steps('Configuration').NetwChangesManagementGroup)]",
         "BYOActionGroup": "[steps('Notification').BYOActionGroup]",
         "BYOAlertProcessingRule": "[steps('Notification').BYOAlertProcessingRule.id]",
         "deployAMBAPortalAccelerator": "Yes",

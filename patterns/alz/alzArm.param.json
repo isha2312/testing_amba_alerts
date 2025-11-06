@@ -20,6 +20,9 @@
     "LandingZoneManagementGroup": {
       "value": "contoso-landingzones"
     },
+    "NetwChangesManagementGroup": {
+      "value": "contoso-networkchanges"
+    },
     "enableAMBAConnectivity": {
       "value": "Yes"
     },
